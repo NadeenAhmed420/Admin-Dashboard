@@ -36,3 +36,4 @@ orders.forEach((order) => {
   tr.innerHTML = trContent;
   document.querySelector("table tbody").append(tr);
 });
+
