@@ -361,7 +361,7 @@ main .insights small {
 
 /* start table */
 main .orders {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 main .orders h2 {
   margin-bottom: 1rem;
@@ -565,7 +565,7 @@ canvas#Chart:hover {
 
 /* start sales section  */
 .right .recent-sales {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .right .recent-sales h2 {
   margin-bottom: 0.8rem;
@@ -575,7 +575,7 @@ canvas#Chart:hover {
   align-items: center;
   gap: 1rem;
   margin-bottom: 0.7rem;
-  padding: 1.4rem var(--card-padding);
+  padding: 2rem var(--card-padding);
   background: var(--color-white);
   border-radius: var(--border-radius-3);
   transition: 0.3s;
@@ -604,8 +604,10 @@ canvas#Chart:hover {
 .right .recent-sales .customer .icon {
   background-color: var(--color-succes);
 }
-.right .recent-sales .add-product {
+.right  .add-product {
+  margin-top: 1rem;
   border: dashed 2px var(--color-primary);
+  border-radius: var(--border-radius-3);
   color: var(--color-primary);
   background-color: transparent;
   display: flex;
@@ -614,12 +616,12 @@ canvas#Chart:hover {
   gap: 0.6rem;
   padding: 15px;
 }
-.right .recent-sales .add-product:hover {
+.right  .add-product:hover {
   background-color: var(--color-primary);
   color: white;
   border-radius: var(--border-radius-3);
 }
-.right .recent-sales .add-product h3 {
+.right  .add-product h3 {
   font-weight: 600;
   font-size: 13px;
 }
@@ -627,11 +629,11 @@ canvas#Chart:hover {
 
 /* start trans section  */
 .right .recent-trans {
-  margin-top: 2.4rem;
+  margin-top: 4rem;
 }
 
 .right .recent-trans .header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -692,6 +694,12 @@ canvas#Chart:hover {
 
 /* MEDIA QUERIES */
 /* ///////////////////// */
+@media (min-width: 1200px) and (max-width:1512px) {
+  .right .recent-sales{
+   margin-top: 2.6rem;
+  } 
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 96%;
@@ -741,11 +749,15 @@ canvas#Chart:hover {
   main .invest {
     margin-top: 77%;
   }
+  .right .recent-trans{
+    margin-top: 5.3rem;
+  }
 
   main .cards {
     grid-template-columns: 1fr;
     gap: 1.2rem;
   }
+
 }
 @media (min-width: 769px) and (max-width: 1199px) {
   main .chart {
@@ -859,5 +871,9 @@ canvas#Chart:hover {
   }
   .right .profile .info {
     display: none;
+  }
+  .right .recent-trans{
+    margin: 2rem 0 0 0 ;
+
   }
 }
